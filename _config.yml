@@ -1,8 +1,7 @@
 title: Mystiks-Treasure-Trove
 author: ~Mystik
 url: https://mystickev.github.io # root address of the site
-description: > # description of the site (multiple lines allowed)
-Mystiks-Treasure-Trove is a collection of writeups and information that i have come across during my CyberSecurity engagements i.e CTFS,Work and personal Research. The topics range from forensics, reverse-engineering, OSINT and new research topics that i engage in. There is something to take home from the content on this blogs and all content reflects my thought process and logical capability to tackle problems. Enjoy :)
+description: Mystiks-Treasure-Trove is a collection of writeups and information that i have come across during my CyberSecurity engagements i.e CTFS,Work and personal Research. The topics range from forensics, reverse-engineering, OSINT and new research topics that i engage in. There is something to take home from the content on this blogs and all content reflects my thought process and logical capability to tackle problems. Enjoy.
 permalink: /:slug
 
 favicon: "./logo.png" # relative path to site's favicon

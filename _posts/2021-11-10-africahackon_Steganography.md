@@ -46,7 +46,7 @@ open the pvdextract.py in a code editor and replace the logfile name with ours(e
 - cipher = output_file
 This will spit the flag
   
-![image info](/assets/images/favicons/spec.png)
+![image info](/assets/images/favicon/spec.png)
 
 ## Takeaways
   
@@ -65,7 +65,7 @@ i heard you likes memes XD » hint=John Cena :)
 
 ## Attached files
 
-- ![chall1.png](/assets/images/favicons/chall1.png)
+- ![chall1.png](/assets/images/favicon/chall1.png)
 
 ## Summary
 
@@ -81,7 +81,7 @@ ah{redacted}
 
 Doing a bit of research on digital ink steg, led me to one java tool. The DIIT project can be found at <http://diit.sourceforge.net/> Download the tool and load the image.I used the battle steg algorithm which successfully decrypted the concealed image to a text file
 
-![image info](/assets/images/favicons/diit.png)
+![image info](/assets/images/favicon/diit.png)
 
 ## Takeaways
 

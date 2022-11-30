@@ -2,8 +2,7 @@ title: Mystiks-Treasure-Trove
 author: ~Mystik
 url: https://mystickev.github.io # root address of the site
 description: > # description of the site (multiple lines allowed)
-  Moonwalk is a fast and elegant Jekyll theme with a clean dark mode. It comes with horizontal list (for navbar and footer), card list (for portfolio), and a generic vertical list. It is very easy to modify in case you want to build over it - please see _layouts/home.html to do that.
-
+Mystiks-Treasure-Trove is a collection of writeups and information that i have come across during my CyberSecurity engagements i.e CTFS,Work and personal Research. The topics range from forensics, reverse-engineering, OSINT and new research topics that i engage in. There is something to take home from the content on this blogs and all content reflects my thought process and logical capability to tackle problems. Enjoy :)
 permalink: /:slug
 
 favicon: "./logo.png" # relative path to site's favicon

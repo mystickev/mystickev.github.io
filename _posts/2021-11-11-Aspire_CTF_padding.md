@@ -14,7 +14,7 @@ tags:
 ![Forensics category](https://img.shields.io/badge/category-Forensics-lightgrey.svg)
 ![score](https://img.shields.io/badge/score-200-blue.svg)
 
-![image info](/assets/images/favicons/scoreboard.png)
+![image info](/assets/images/favicon/scoreboard.png)
 
 ## Introduction
 
@@ -46,7 +46,7 @@ Hackfest{redacted}
 This challenge was the last one we solved and being the firstblood, meant it was the most tricky :) .At first, i tried extracting the firmware with binwalk but that was just a big mess of files that could not help me get to the kernel. I went for a more precision tool, dd.
 my first attempt was to grab only the lzma(This is the compressed kernel image) at the bytes 128 as shown below in the binwalk output below.
 
-![image info](/assets/images/favicons/demo.png)
+![image info](/assets/images/favicon/demo.png)
 
 The command to carve the lzma.
 
@@ -62,16 +62,16 @@ After dd gets me the lzma, my plan is to extract the lzma with unlzma tool but t
 I took hours trying to figure out why i was getting a corrupt image.
 Finally i decided to start at the basics and understand what kind of file i was working on. i had previously ignored the output from file command, which ultimately helped me figure the challenge out
 This is output from the file command
-![image_info](/assets/images/favicons/file.png)
+![image_info](/assets/images/favicon/file.png)
 
 As you can see, we are dealing with an u-boot legacy uImage. A bit of research on this firmware-image format, i came across a tool; Dumpimage ,that extracts files from a uImage.
 
-![image_info](/assets/images/favicons/dumpimage.png)
+![image_info](/assets/images/favicon/dumpimage.png)
 
 This was the output i got and you can see that our demo.lzma file is now a legit OS Kernel Image. Now we look for the padded section and find the offset. My go to editor for editing hexdump is bless editor. i opened the kernel in bless and used the search option to look for "00000000000000000000" ,yeap!..A lot of zeroes. Padding is where zeroes are added to input with the aim to obtain equality, or just CTF :)
-![image_info](/assets/images/favicons/bless.png)
+![image_info](/assets/images/favicon/bless.png)
 
-![image_info](/assets/images/favicons/offset.png)
+![image_info](/assets/images/favicon/offset.png)
 
 You can see the start of padding selected in the first image and its offset displayed on the second image. And that was our flag.
 

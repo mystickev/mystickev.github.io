@@ -1,11 +1,11 @@
 navbar_entries:
-  - title: about
+  - title: About
     url: about
 
-  - title: blog
+  - title: Blog
     url: blog
 
-  - title: website
+  - title: Website
     url: https://mystickev.github.io
 
 project_entries:
@@ -57,13 +57,13 @@ footer_entries:
   - title: ~Mystiks homepage
     url: https://mystickev.github.io
 
-  - title: twitter
+  - title: Twitter
     url: https://twitter.com/mystik_kev
 
-  - title: github
+  - title: Github
     url: https://github.com/mystickev
 
-  - title: feed
+  - title: Feed
     url: feed.xml
 
 misc_entries:

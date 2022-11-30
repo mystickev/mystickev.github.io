@@ -21,7 +21,7 @@ How often do you read steganography research papers?, the spectogram looks nice.
 
 ## Attached files
 
-- [spectro.zip](/assets/spectro.zip)
+- [spectro.zip](/'assets/Favicons'/spectro.zip)
 
 ## Summary
 

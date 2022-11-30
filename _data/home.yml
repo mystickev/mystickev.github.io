@@ -6,7 +6,7 @@ navbar_entries:
     url: blog
 
   - title: website
-    url: https://www.abhinav.co
+    url: https://mystickev.github.io
 
 project_entries:
   - title: Project 1
@@ -37,31 +37,31 @@ project_entries:
 
 old_project_entries:
   - title: Soopr
-    url: https://www.soopr.co
+    url: https://github.com/mystickev/CTFwriteups
     desc: Delight your readers - add beautiful share and like buttons easily to your websites 
     highlight: NEW
 
   - title: Cookie
-    url: https://github.com/abhinavs/cookie
+    url: https://github.com/mystickev
     desc: An open source landing website with supporting pages and integrated blog
 
   - title: Moonwalk
-    url: https://github.com/abhinavs/moonwalk
+    url: https://github.com/mystickev
     desc: A fast and minimalist Jekyll blog theme with clean dark mode
 
   - title: Humangous
-    url: https://www.humangous.co
+    url: https://github.com/mystickev
     desc: The better people know you, the better they collaborate
 
 footer_entries:
-  - title: abhinav's homepage
-    url: https://www.abhinav.co
+  - title: ~Mystiks homepage
+    url: https://mystickev.github.io
 
   - title: twitter
-    url: https://twitter.com/abhinav
+    url: https://twitter.com/mystik_kev
 
   - title: github
-    url: https://github.com/abhinavs
+    url: https://github.com/mystic_kev
 
   - title: feed
     url: feed.xml
@@ -84,10 +84,10 @@ misc_entries:
     url: false
     entries:
       - title: on Github
-        url: https://github.com/abhinavs/moonwalk
+        url: https://github.com/mystickev/
 
-      - title: originally built for abhinav's homepage
-        url: https://www.abhinav.co
+      - title: originally built for ~mystik
+        url: https://mystickev.github.io
 
       - title: this list is scalable and can be nested
         url: false

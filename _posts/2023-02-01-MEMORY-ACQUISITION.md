@@ -45,20 +45,20 @@ There are two main ways that memory acquisition can be divided from context to t
 
 Hardware-Based and Software-Based. For this article, we will cover only software methods based on the operating system.
 
-### WINDOWS
+## WINDOWS
 
-**DumpIt**
+### DumpIt
 
 DumpIt is a minimal and free tool that is used to create a physical memory dump of Windows computers. It is compatible with both 32-bit (x86) and 64-bit (x64) systems. When used, DumpIt generates a raw memory dump file in the current directory without any further prompts, except for a confirmation question before starting the dump process. This feature makes it ideal for incident response scenarios, as it can easily be deployed on a USB drive for quick access.
 
 After Downloading the tool, run it and accept with ‘Y’ on the prompt provided as shown below
 
-![Dump-it](images/image1.png "image_tooltip")
+![Dump-it](/assets/images/favicon/dumpit.png)
 
 
 Then leave the rest for the tool to take care of. Simple as that!
 
-**WinpMem**
+### WinpMem
 
 An open-source command line tool that is used on windows systems to acquire memory. 
 
@@ -68,16 +68,15 @@ A read device interface is used instead of writing the image from the kernel lik
 
 Here are some of the options the tool offers
 
-
-![WinpMEM](images/image2.png "image_tooltip")
-
-
-![winpmemdump](images/image3.png "image_tooltip")
+![WinpMEM](/assets/images/favicon/winpmem.png)
 
 
-LINUX
+![winpmemdump](/assets/images/favicon/winpmem-memory.png)
 
-**AVML** 
+
+## LINUX
+
+### AVML
 
 Acquire Volatile Memory for Linux is a tool developed by Microsoft for capturing the contents of a Linux computer's physical memory. The key advantage of AVML is its ability to operate without the need for installation on the target system and its support for multiple memory dump sources, i.e
 
@@ -86,7 +85,7 @@ Acquire Volatile Memory for Linux is a tool developed by Microsoft for capturing
 * /proc/kcore
 * /dev/mem.
 
-**LIME/dd / dcfldd / dc3dd**
+### LIME/dd / dcfldd / dc3dd
 
 LiME, dc3dd, and dcfldd are command-line imaging tools used in digital forensics to create raw images of storage media. They work similarly to the original dd tool, which is available on most Unix and Linux systems. They all have an input file defined by if=/dev/&lt;device> and an output file defined by of=&lt;imagefile>. The forensic versions of dd have additional options for logging and hashing, as well as splitting the output into smaller segments for easier handling. The log=&lt;logfile> option can document the entire output process.
 

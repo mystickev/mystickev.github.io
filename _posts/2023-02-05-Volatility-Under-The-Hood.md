@@ -79,3 +79,7 @@ When the library is called, the calling program provides the necessary informati
 ## AUTOMAGIC
 
 Automagics are pre-execution setup tasks that create a favorable context for a plugin by eliminating repetitive and error-prone steps. They work like magic by taking a raw memory image and automatically providing the plugin with the necessary Intel translation layer and accurate symbol table, without the need for the plugin or calling program to specify all details. They simplify the process of preparing the context, making it easier and less prone to errors.
+
+## CONCLUSION
+
+In conclusion, Volatility 3 in itself is a powerful library that provides the most comprehensive analysis capabilities for memory forensics. Each component discussed above has an overall role in the analysis of memory. The symbols and symbol tables provide a way to define and reference program templates and debug information, while the context holds the symbol tables and memory layers. The plugins request data and conduct analysis on the context, while the configuration tree serves as the communication channel between the calling program and the library. The automagics simplify the setup process by providing an appropriate context for the plugins, and the renderers finally ensure that the results returned are in a format that is easy to process by the calling program.

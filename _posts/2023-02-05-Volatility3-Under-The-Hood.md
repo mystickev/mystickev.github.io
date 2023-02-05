@@ -7,7 +7,7 @@
 Volatility 3 is a powerful memory analysis tool that is widely used in the digital forensics community to extract critical information from volatile memory dumps. The tool provides a wealth of information about the state of a system at the time of memory acquisition, allowing for in-depth analysis of system processes, network connections, and other critical data. In this blog, we will delve into the "under the hood" workings of Volatility 3, exploring its architecture, data structures, and algorithms. We will also discuss how it is used to extract valuable information from memory dumps and what makes it a versatile and indispensable tool for digital forensics professionals. So, buckle up and get ready to dive deep into the world of Volatility 3! 
 
 
-## VOLATILITY 3 UNDER THE HOOD
+## VOLATILITY 3 STRUCTURE
 
  In Volatility 3, the process of memory analysis is broken down into several components:
 

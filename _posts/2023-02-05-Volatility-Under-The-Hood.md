@@ -1,85 +1,26 @@
-<!-- Output copied to clipboard! -->
-
-<!-----
-
-You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
-* ERRORs: 0
-* WARNINGs: 0
-* ALERTS: 3
-
-Conversion time: 0.88 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β34
-* Sat Feb 04 2023 23:06:03 GMT-0800 (PST)
-* Source doc: Essay
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
------>
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 3.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-
-# VOLATILITY 3 \
-Under The Hood
-
-**___**
-
-
-## By ~mystik
-
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
+# VOLATILITY 3 Under The Hood
 
 ![alt_text](images/image1.jpg "image_tooltip")
-
-
 
 # INTRODUCTION
 
 Volatility 3 is a powerful memory analysis tool that is widely used in the digital forensics community to extract critical information from volatile memory dumps. The tool provides a wealth of information about the state of a system at the time of memory acquisition, allowing for in-depth analysis of system processes, network connections, and other critical data. In this blog, we will delve into the "under the hood" workings of Volatility 3, exploring its architecture, data structures, and algorithms. We will also discuss how it is used to extract valuable information from memory dumps and what makes it a versatile and indispensable tool for digital forensics professionals. So, buckle up and get ready to dive deep into the world of Volatility 3! 
 
 
-## VOLATILITY3 UNDER THE HOOD
+## VOLATILITY 3 UNDER THE HOOD
 
-
-## In Volatility 3, the process of memory analysis is broken down into several components: 
-
-
+ In Volatility 3, the process of memory analysis is broken down into several components:
 
 * memory layers
 * Templates
 * Objects & symbol tables.
 
-
-##  All of these components are stored in a single place, called a Context, which acts as a holding area for all the necessary pieces of information and tools needed for memory analysis
+All these components are stored in a single place, called a Context, which acts as a holding area for all the necessary pieces of information and tools needed for memory analysis
 
 
 ## MEMORY LAYERS
 
 Memory data is stored in a complex way and is not always easily accessible. To make sense of it, Volatility 3 uses a special approach called a directed graph. This graph is made up of two types of elements: 
-
-
 
 * DataLayers
 * TranslationLayers. 
@@ -90,13 +31,7 @@ For example, given a raw memory image in a file format called LiME and a page fi
 
 To check for the layers that volatility 3 supports, use the **_frameworkinfo_** plugin.
 
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image2.png "image_tooltip")
-
 
 
 ## TEMPLATES and OBJECTS
@@ -109,23 +44,15 @@ For example, to view the template in volshell, follow the following steps:
 
 Launch volshell3, and change the context to any PID of a running process using the following  command.
 
-cc(‘PID’)
+```cc(‘PID’)```
 
-. Each process has a template known as ‘_EPROCESS’ that defines the data structure of a process. To view the template for the process you just changed the context to, use the following command:
+Each process has a template known as ‘_EPROCESS’ that defines the data structure of a process. To view the template for the process you just changed the context to, use the following command:
 
-dt(‘_EPROCESS’)
+```dt(‘_EPROCESS’)```
 
 Results will be as shown in the screenshot below.
 
-
-## 
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image3.png "image_tooltip")
-
-
 
 ## SYMBOLS
 

@@ -1,6 +1,6 @@
 # VOLATILITY 3 Under The Hood
 
-![alt_text](images/image1.jpg "image_tooltip")
+![memory_forensics](/assets/images/favicon/shutterstock_562722673.jpg)
 
 # INTRODUCTION
 
@@ -31,7 +31,7 @@ For example, given a raw memory image in a file format called LiME and a page fi
 
 To check for the layers that volatility 3 supports, use the **_frameworkinfo_** plugin.
 
-![alt_text](images/image2.png "image_tooltip")
+![framework_info](/assets/images/favicon/framework-info.png)
 
 
 ## TEMPLATES and OBJECTS
@@ -52,7 +52,7 @@ Each process has a template known as ‘_EPROCESS’ that defines the data struc
 
 Results will be as shown in the screenshot below.
 
-![alt_text](images/image3.png "image_tooltip")
+![EPROCESS](/assets/images/favicon/template.png)
 
 ## SYMBOLS
 

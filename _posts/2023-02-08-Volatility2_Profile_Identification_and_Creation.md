@@ -89,5 +89,6 @@ If you wish to venture more into the intricacies of how volatility scans for a s
 
 ## RESOURCES
 
-[finding kernel global variables](http://moyix.blogspot.com/2008/04/finding-kernel-global-variables-in.html)
-[identifying memory images](https://gleeda.blogspot.com/2010/12/identifying-memory-images.html)
+* [finding kernel global variables](http://moyix.blogspot.com/2008/04/finding-kernel-global-variables-in.html)
+
+* [identifying memory images](https://gleeda.blogspot.com/2010/12/identifying-memory-images.html)

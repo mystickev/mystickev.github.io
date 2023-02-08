@@ -85,7 +85,7 @@ Congratulations!!, From the results above, we have achieved the task we set out 
 
 ## CONCLUSION
 
-If you wish to venture more into the intricacies of how volatility scans for a suitable profile. Some resources have been included below about, finding kernel global variables and some interesting read on how to read environment variables such as PROCESSOR_ARCHITECTURE and PROCESSOR_ARCHITEW6432. Who knows, might motivate you to script the next volatility or better detect plugins. Overall, the methods discussed above are fairly easy and fast to execute. You can try it yourself by dumping the volatile memory of your virtualized system, as we had previously discussed in this (article)[link to memory extraction]. The next blog will cover how to make Linux symbol tables for volatility 3. Tune in :) 
+If you wish to venture more into the intricacies of how volatility scans for a suitable profile. Some resources have been included below about, finding kernel global variables and some interesting read on how to read environment variables such as PROCESSOR_ARCHITECTURE and PROCESSOR_ARCHITEW6432. Who knows, might motivate you to script the next volatility or better detect plugins. Overall, the methods discussed above are fairly easy and fast to execute. You can try it yourself by dumping the volatile memory of your virtualized system, as we had previously discussed in this [previous article](https://mystickev.github.io/memory-acquisition). The next blog will cover how to make Linux symbol tables for volatility 3. Tune in :) 
 
 ## RESOURCES
 

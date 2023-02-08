@@ -1,4 +1,4 @@
-# Volatility Profiles: Scanning and Creating
+# Volatility Profiles: Scanning for Windows Profiles and Creating Linux Profiles
 
 Volatility is a handy and straightforward tool for memory forensics.  That is the reason why it is most preferred by forensic analysts. In this blog, I will discuss how to detect the profile to use, given a memory image, and also how to create profiles for operating systems that do not have, one yet.
 
@@ -6,9 +6,10 @@ Volatility is a handy and straightforward tool for memory forensics.  That is th
 First things first, The VolatilityFoundation has released two different versions of volatility, Volatility2, and Volatility3. Profiles in this case are limited to volatility 2 in the context of usage. Let’s discuss what profiles are and understand why we need them to conduct memory forensics.
 
 ## PROFILES
+
 A profile in volatility is essentially a zip file that contains information on the kernel’s data structures and debugs symbols. Volatility uses this information to locate critical data in the memory and parse it once when found. This is unlike volatility 3 which uses symbol tables that we discussed (earlier)[blog-link], which are generated based on the memory image itself.
 
-## Windows Profiles.
+### WINDOWS PROFILES.
 
 Luckily, a typical volatility2 installation will have several profiles that are pre-included for anyone to play with. The full list of these profiles can be found [here](https://github.com/volatilityfoundation/volatility/wiki/2.6-Win-Profiles#profile-lists) or by running the command below:
 
@@ -41,7 +42,7 @@ To solve such a situation, use the kdbgscan plugin to identify the KDBG that con
 
 ![image](/assets/images/favicon/kdbgscan.png)
 
-## LINUX PROFILES
+### LINUX PROFILES
 
 Given a memory image from a specific Debian/ubuntu/any other Linux version, it is important to have a profile that works with the specific version. Unfortunately, volatility2 doesn’t ship with Linux profiles nor can we use the plugin imageinfo to identify which profile to use with a Linux memory image. So in this case, we have to create one that is specific to the Linux version we are working with. The important bits needed to create a working Linux profile are:
  * Linux kernel headers

@@ -1,4 +1,4 @@
-# Volatility Profiles: Scanning for Windows Profiles and Creating Linux Profiles
+## Scanning for Windows Profiles and Creating Linux Profiles
 
 Volatility is a handy and straightforward tool for memory forensics.  That is the reason why it is most preferred by forensic analysts. In this blog, I will discuss how to detect the profile to use, given a memory image, and also how to create profiles for operating systems that do not have, one yet.
 
@@ -89,5 +89,5 @@ If you wish to venture more into the intricacies of how volatility scans for a s
 
 ## RESOURCES
 
-http://moyix.blogspot.com/2008/04/finding-kernel-global-variables-in.html
-https://gleeda.blogspot.com/2010/12/identifying-memory-images.html
+[finding kernel global variables](http://moyix.blogspot.com/2008/04/finding-kernel-global-variables-in.html)
+[identifying memory images](https://gleeda.blogspot.com/2010/12/identifying-memory-images.html)

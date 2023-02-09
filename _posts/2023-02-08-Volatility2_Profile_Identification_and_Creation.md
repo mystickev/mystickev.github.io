@@ -7,7 +7,7 @@ First things first, The VolatilityFoundation has released two different versions
 
 ## PROFILES
 
-A profile in volatility is essentially a zip file that contains information on the kernel’s data structures and debugs symbols. Volatility uses this information to locate critical data in the memory and parse it once when found. This is unlike volatility 3 which uses symbol tables that we discussed (earlier)[blog-link], which are generated based on the memory image itself.
+A profile in volatility is essentially a zip file that contains information on the kernel’s data structures and debugs symbols. Volatility uses this information to locate critical data in the memory and parse it once when found. This is unlike volatility 3 which uses symbol tables that we discussed [earlier](https://mystickev.github.io/volatility3-under-the-hood), that are generated based on the memory image itself.
 
 ### WINDOWS PROFILES.
 

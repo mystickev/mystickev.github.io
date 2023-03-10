@@ -69,5 +69,5 @@ Once you have generated the symbol table, you can move it to the Volatility3 sym
 
 ## RESOURCES
 
-https://beguier.eu/nicolas/articles/security-tips-3-volatility-linux-profiles.html#:~:text=Generating%20a%20profile%20for%20Volatility%203&text=First%2C%20you%20need%20to%20clone,before%20running%20the%20docker%20container.&text=Then%20you%20need%20to%20download,from%20the%20target%20Linux%20kernel.
+* https://beguier.eu/nicolas/articles/security-tips-3-volatility-linux-profiles.html#:~:text=Generating%20a%20profile%20for%20Volatility%203&text=First%2C%20you%20need%20to%20clone,before%20running%20the%20docker%20container.&text=Then%20you%20need%20to%20download,from%20the%20target%20Linux%20kernel.
 

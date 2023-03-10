@@ -26,47 +26,24 @@ You just need to run the command
 
 The result is as shown below:
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![image info](/assets/images/favicon/PDB.png)
-
 
 The plugin just makes our work easier by providing the values we need to download a pdb file for our memory image. Let’s understand what flags the command provided by volatility3 uses. The -p flag represents the pdb file and the -g flag consists of a “[GUID, AGE]” value. This is the technique Microsoft maintains and manages symbol files with these values, and thus you need to specify PDB, GUID, and AGE in the URL to download a specific Symbol file. Here is a construct of a URL to download the pdb file in our case:
 
 http://msdl.microsoft.com/download/symbols/ntoskrnl.pdb/47A5AC97343A4A7ABF14EFD9E99337722/ntoskrnl.pdb
 
- 
-
 We can therefore go ahead and download the pdb using “wget” or your preferred tool.
 
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
+ ![image info](/assets/images/favicon/pdb-download.png)
 
 Next, we use the pdbconv.py script to create a symbol table using the pdbfile as follows:
 
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
+![image info](/assets/images/favicon/tpi-layer.png)
 
 
 The file will be saved on json.xz format:
 
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
-
+![alt_text](/assets/images/favicon/symbol-file.png)
 
 Move the symbol table to the directory:
 
@@ -80,7 +57,7 @@ Alternatively, you can direct volatility 3 to the symbols directory using the �
 
 **$ python3 vol.py -f test.mem -s symbols-dir windows.inf**
 
-**CREATING LINUX SYMBOL TABLES**
+## CREATING LINUX SYMBOL TABLES
 
 It is not possible to create a symbol table in Volatility 3 using a Volatility 2 profile. To create a symbol table, you can clone the dwarf2json repository, which allows you to generate a JSON file from an ELF file. 
 
@@ -88,7 +65,7 @@ You will also need to download the debug symbols from the target Linux kernel an
 
 Once you have generated the symbol table, you can move it to the Volatility3 symbols directory and check that Volatility has loaded it using the "volatility3 -f dump.raw linux.pstree.PsTree" command.
 
-RESOURCES
+## RESOURCES
 
 https://beguier.eu/nicolas/articles/security-tips-3-volatility-linux-profiles.html#:~:text=Generating%20a%20profile%20for%20Volatility%203&text=First%2C%20you%20need%20to%20clone,before%20running%20the%20docker%20container.&text=Then%20you%20need%20to%20download,from%20the%20target%20Linux%20kernel.
 

@@ -1,12 +1,12 @@
 # Creating Volatility 3 symbols For specific OS
 
-INTRODUCTION
+## INTRODUCTION
 
-Volatility 3, as I had discussed in this [blog](link), uses symbol tables to map memory for a given memory image. Symbol tables contain the memory addresses of functions and data structures, as well as their associated symbols, which can be used to identify them in memory. They aid in identifying system-level artifacts, such as kernel drivers, libraries, and processes. They can be stored as .json files, or in compressed format as .json.gz, .json.xz, or .zip.
+Volatility 3, as I had discussed previously, uses symbol tables to map memory for a given memory image. Symbol tables contain the memory addresses of functions and data structures, as well as their associated symbols, which can be used to identify them in memory. They aid in identifying system-level artifacts, such as kernel drivers, libraries, and processes. They can be stored as .json files, or in compressed format as .json.gz, .json.xz, or .zip.
 
 Volatility3 decompresses them during use. During usage, symbol tables are cached(compressed) and stored under the user’s home directory, in the dir .cache/volatility3.. In this blog, we are going to discuss how to create these symbol tables offline and use them to analyze a memory image.
 
-WINDOWS SYMBOL TABLES
+### WINDOWS SYMBOL TABLES
 
 In windows systems, Volatility takes a string containing the GUID and Age of the required PDB file. The tool then searches for all files in the symbol directories configured under the windows subdirectory. If any contains metadata that matches the PDB name and GUID or age, it is then used as a symbol table. If none can be found, then the required PDB file is downloaded from Microsoft's Symbol Server and converted into the needed JSON format.
 
@@ -29,7 +29,7 @@ The result is as shown below:
 <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image1.png "image_tooltip")
+![image info](/assets/images/favicon/PDB.png)
 
 
 The plugin just makes our work easier by providing the values we need to download a pdb file for our memory image. Let’s understand what flags the command provided by volatility3 uses. The -p flag represents the pdb file and the -g flag consists of a “[GUID, AGE]” value. This is the technique Microsoft maintains and manages symbol files with these values, and thus you need to specify PDB, GUID, and AGE in the URL to download a specific Symbol file. Here is a construct of a URL to download the pdb file in our case:

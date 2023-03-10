@@ -51,11 +51,11 @@ Move the symbol table to the directory:
 
 Alternatively, you can direct volatility 3 to the symbols directory using the ‘-s’ option.
 
-**$ ls symbol-dir/windows/ntkrnlmp.pdb/**
+```$ ls symbol-dir/windows/ntkrnlmp.pdb/47BA5AC97343A4A7ABF14EFD9E9933772-2.json.xz```
 
-**47BA5AC97343A4A7ABF14EFD9E9933772-2.json.xz**
+``` python3 vol.py -f test.mem -s symbols-dir windows.info```
 
-**$ python3 vol.py -f test.mem -s symbols-dir windows.inf**
+Flex your symbol to find out if it works with the memory image!!
 
 ## CREATING LINUX SYMBOL TABLES
 
@@ -63,7 +63,9 @@ It is not possible to create a symbol table in Volatility 3 using a Volatility 2
 
 You will also need to download the debug symbols from the target Linux kernel and install them in a docker container that matches the target operating system. 
 
-Once you have generated the symbol table, you can move it to the Volatility3 symbols directory and check that Volatility has loaded it using the "volatility3 -f dump.raw linux.pstree.PsTree" command.
+Once you have generated the symbol table, you can move it to the Volatility3 symbols directory and check that Volatility has loaded it using the 
+
+```volatility3 -f dump.raw linux.pstree.PsTree``` command
 
 ## RESOURCES
 

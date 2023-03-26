@@ -28,7 +28,7 @@ The website directed me to what appeared to be an implementation of a password m
 
 ![image_info](/assets/images/favicon/notes-update.png)
 
-I proceeded to test the graphql endpoint i had identified earlier. On navigating the endpoint, the website gave us an error to submit a query, obviously!:unamused:
+I proceeded to test the graphql endpoint i had identified earlier. On navigating the endpoint, the website gave us an error to submit a query, obviously!
 
 ![image_info](/assets/images/favicon/make-query.png)
 

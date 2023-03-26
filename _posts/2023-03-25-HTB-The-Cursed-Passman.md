@@ -13,7 +13,7 @@
 
 *Question:* Pandora discovered the presence of a mole within the ministry. To proceed with caution, she must obtain the master control password for the ministry, which is stored in a password manager. Can you hack into the password manager?
 
-__SOLUTION__
+## __SOLUTION__
 
 This was a very interesting challenge to me because it was a totally new attack challenge for me. It took me a day+ to learn and figure it out. Lets dive into how i solved it.
 The challenge provided us with a zip file that contained the website's source code and a dockerfile for us to run it locally. First, it appeared as a node js application, so i checked routes to see the paths that the website was routing through. Here, I found a graphql endpoint.

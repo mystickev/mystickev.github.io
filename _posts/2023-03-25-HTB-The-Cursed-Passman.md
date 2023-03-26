@@ -4,10 +4,12 @@
 
 ## WEB: PASSMAN
 
+
 ![date](https://img.shields.io/badge/date-18.03.2023-lightgreen.svg)  
 ![solved in time of CTF](https://img.shields.io/badge/solved-in%20time%20of%20CTF-lightgreen.svg)  
 ![WEB category](https://img.shields.io/badge/category-WEB-lightgreen.svg)
 ![score](https://img.shields.io/badge/score-300-blue.svg)
+
 
 *Question:* Pandora discovered the presence of a mole within the ministry. To proceed with caution, she must obtain the master control password for the ministry, which is stored in a password manager. Can you hack into the password manager?
 
@@ -50,7 +52,7 @@ After a bit more research, i found an extension in burp that could be used to au
 All the extension required was the introspection data returned by the query i did prior. I saved burps response to a file and loaded it to the extension.
 This was superhelpful since i found a graphql query path that i hadn't seen before(A whole painful night of searching and trying different stuff 😬)
 
-This was the extension response:
+This was the extension's response:
 
 ![image_info](/assets/images/favicon/update-pass-mutation.png)
 

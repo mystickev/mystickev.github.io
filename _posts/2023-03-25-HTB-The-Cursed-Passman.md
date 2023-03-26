@@ -33,7 +33,7 @@ I proceeded to test the graphql endpoint i had identified earlier. On navigating
 ![image_info](/assets/images/favicon/make-query.png)
 
 I did a bit of research and came across a payloadofthings for graphql exploitation. Awesome!!
-I Found a supercool query that could dump the whole graphql query path. This was a misconfiguration bug known as introspection :boom:.
+I Found a supercool query that could dump the whole graphql query path. This was a misconfiguration bug known as introspection.
 
 ![image_info](/assets/images/favicon/introspection.png)
 

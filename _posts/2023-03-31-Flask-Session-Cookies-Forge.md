@@ -1,5 +1,7 @@
 # Exploiting Signed Flask Cookies.
 
+![Heading](/assets/images/favicon/CRACKING.png)
+
 Flask uses a secure URL-safe signed serializer called "itsdangerous" to encode client-side session cookies. To prevent tampering by the client, the Flask app utilizes a secret key to sign the session cookie.
 
 Although the session cookie may appear to be a sequence of random characters, it is actually easy to decode with the appropriate key.

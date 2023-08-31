@@ -22,19 +22,19 @@ Luckily, I was able to lay my hands on the samples released by **jpcert** and I 
    
    ![PDFID Entropy](/assets/images/favicon/pdfid-entropy-of-all-samples.png)
    
-5. **Extraction:** Further investigate using the extra flag for **emldump** to view the initial characters of each part. The activemime component will have a header labeled `activeMime`.
+4. **Extraction:** Further investigate using the extra flag for **emldump** to view the initial characters of each part. The activemime component will have a header labeled `activeMime`.
    
    ![Head ASCII Identify](/assets/images/favicon/activex-detect-emldump.png)
    
-7. **Dumping:** Use **emldump** to extract components. The output file will contain the activemime component.
+5. **Dumping:** Use **emldump** to extract components. The output file will contain the activemime component.
    
    ![Dump Activemime](/assets/images/favicon/dump-activemime.png)
-   
-9. **OLE Investigation:** With the dumped activemime files in hand, use **oledump** to dive deeper. You will find that the Activemime files have a macro stream which can be identified by the **M** beside the stream.
+
+6. **OLE Investigation:** With the dumped activemime files in hand, use **oledump** to dive deeper. You will find that the Activemime files have a macro stream which can be identified by the **M** beside the stream.
     
    ![OLE Dump VBA Stream](/assets/images/favicon/oledump-vba-stream.png)
    
-11. **VBA Extraction:** Extract the VBA streams from the activemime files using **oledump**. As shown in the screenshot below, you can now view any malicious actions that the maldoc aims to execute.
+7. **VBA Extraction:** Extract the VBA streams from the activemime files using **oledump**. As shown in the screenshot below, you can now view any malicious actions that the maldoc aims to execute.
     
    ![5b Macro](/assets/images/favicon/5b_macro.png)
 
@@ -51,15 +51,19 @@ Luckily, I was able to lay my hands on the samples released by **jpcert** and I 
    
    ![01 Oleid](/assets/images/favicon/01ac-oleid.png)
    
-4. **VBA Analysis:** With **olevba**, examine the VBA content. This might include resources like PNGs and JPEGs encoded in base64.
+2. **VBA Analysis:** With **olevba**, examine the VBA content. This might include resources like PNGs and JPEGs encoded in base64. The activemime component appears as any other embedded resource appears as, base64 encoded data. As we observed earlier, the active mime component was labeled as a jpeg data. We can use this information to narrow down which base64 data to decode. 
    
    ![Activemime Named as JPEG](/assets/images/favicon/activemime-named-as-jpeg.png)
 
    Here is a screenshot showing how olevba parses the extra bytes as macro content:
    
    ![Parsed_vba_as_macro](/assets/images/favicon/detected-pdf-structure-as-macro.png)
+
+3. In our sample, the activemime component base64 data appears jumbled up having long whitespaces in between several chunks of the base64.
+
+   ![Jumbled_base64](/assets/images/favicon/jumbled-olevba.png)
    
-6. **Decoding:** Decode any base64 encoded data using **cyberchef** to retrieve the activemime component.
+4. **Decoding:** Decode the base64 encoded data using **cyberchef** to retrieve the activemime component.
    
    ![Cyberchef Activemime](/assets/images/favicon/cyerchef-decode-activemime.png)
 

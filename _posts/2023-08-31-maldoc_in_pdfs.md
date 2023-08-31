@@ -1,5 +1,7 @@
 # Polyglot PDFs Embedded with MalDoc/ActiveMime
 
+![Maldoc](/assets/images/favicon/maldoc.jpg)
+
 Recently, a new technique to create **polyglot pdf embedded with maldoc** was reported by **jpcert**. The file can be opened in Microsoft Word even though it has the magic header and structures of a PDF file. If the file embedded is configured with VBA, the VBA will be executed by opening it in Word. Didier Stevens released a new version of **emldump** to help in parsing this kind of PDF file. 
 
 Luckily, I was able to lay my hands on the samples released by **jpcert** and I set off to analyze them. The samples that were analyzed are:

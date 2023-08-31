@@ -51,7 +51,7 @@ Luckily, I was able to lay my hands on the samples released by **jpcert** and I 
    
    ![01 Oleid](/assets/images/favicon/01ac-oleid.png)
    
-2. **VBA Analysis:** With **olevba**, examine the VBA content. This might include resources like PNGs and JPEGs encoded in base64. The activemime component appears as any other embedded resource appears as, base64 encoded data. As we observed earlier, the active mime component was labeled as a jpeg data. We can use this information to narrow down which base64 data to decode. 
+2. **VBA Analysis:** With **olevba**, examine the VBA content. This might include resources like PNGs and JPEGs encoded in base64. The activemime component appears as any other embedded resource appears as, base64 encoded data. As we observed earlier, the active mime component was labeled as a jpeg. We can use this information to narrow down which base64 data to decode. 
    
    ![Activemime Named as JPEG](/assets/images/favicon/activemime-named-as-jpeg.png)
 
@@ -63,11 +63,11 @@ Luckily, I was able to lay my hands on the samples released by **jpcert** and I 
 
    ![Jumbled_base64](/assets/images/favicon/jumbled-olevba.png)
    
-4. **Decoding:** Decode the base64 encoded data using **cyberchef** to retrieve the activemime component.
+4. **Decoding:** Decode the base64 encoded data using **cyberchef** to retrieve the activemime component. Proceed with further analysis using olevba, on the activemime file.
    
    ![Cyberchef Activemime](/assets/images/favicon/cyerchef-decode-activemime.png)
 
-* *Incomprehensive Yara rule for detection will be available later at **https://github.com/mystickev/Detections-rules-IOCs/tree/main/YARA-rules***
+* A less comprehensive rule for detection will be available later at **https://github.com/mystickev/Detections-rules-IOCs/tree/main/YARA-rules***
 
 Cheers :)
 

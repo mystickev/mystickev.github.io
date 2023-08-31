@@ -71,7 +71,7 @@ Luckily, I was able to lay my hands on the samples released by **jpcert** and I 
 
 Cheers :)
 
-References:
+### References:
 * https://blogs.jpcert.or.jp/en/2023/08/maldocinpdf.html
 * https://blog.didierstevens.com/2023/08/29/quickpost-analysis-of-pdf-activemime-polyglot-maldocs/
 * https://blog.didierstevens.com/2023/08/29/update-emldump-py-version-0-0-12/

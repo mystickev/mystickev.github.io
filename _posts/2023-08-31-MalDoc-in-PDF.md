@@ -67,7 +67,7 @@ Luckily, I was able to lay my hands on the samples released by **jpcert** and I 
    
    ![Cyberchef Activemime](/assets/images/favicon/cyerchef-decode-activemime.png)
 
-* A less comprehensive rule for detection will be available later at **https://github.com/mystickev/Detections-rules-IOCs/tree/main/YARA-rules***
+* A less comprehensive rule for detection will be available later at **https://github.com/mystickev/Detections-rules-IOCs/tree/main/YARA-rules**
 
 Cheers :)
 

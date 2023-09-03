@@ -9,7 +9,7 @@ navbar_entries:
     url: https://mystickev.github.io
 
 project_entries:
-  - title: MalDOC in PDF
+  - title: Polyglots - MalDOC in PDF
     url: maldoc-in-pdf
     desc: Analysis on Maldoc Embedded in PDF Attack 
     highlight: Malware-analysis
@@ -37,6 +37,7 @@ project_entries:
   - title: Creating and Identifying profiles with volatility2
     url: volatility2-profile-identification-and-creation
     desc: a blog on how to identify and create volatility2 profiles
+    highlight: Memory-Forensics
     
   - title: Volatility3 under the hood
     url: volatility3-under-the-hood

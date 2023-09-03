@@ -47,7 +47,7 @@ project_entries:
     url: wi-the-fi
     desc: A writeup on Layer 2 network forensics
 
-  - title: Aspire CTF: Kernel Padding
+  - title: Aspire CTF - Kernel Padding
     url: Aspire_CTF_padding
     desc: A writeup for kernel padding by Aspire CTF
 

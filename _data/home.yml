@@ -10,7 +10,7 @@ navbar_entries:
 
 project_entries:
   - title: Project 1
-    url: overview-post
+    url: maldoc-in-pdf
     desc: This is an example project, configured in _data/home.yml
 
   - title: Project 2

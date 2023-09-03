@@ -9,31 +9,56 @@ navbar_entries:
     url: https://mystickev.github.io
 
 project_entries:
-  - title: Project 1
+  - title: MalDOC in PDF
     url: maldoc-in-pdf
-    desc: This is an example project, configured in _data/home.yml
+    desc: Analysis on Maldoc Embedded in PDF Attack 
 
-  - title: Project 2
-    url: overview-post
-    desc: Projects are shown in card layout
+  - title: CVE-2023-36884 doc analysis
+    url: cve-2023-36884-analysis
+    desc: A detailed analysis on CVE-2023-36884
 
-  - title: Project 3
-    url: overview-post
-    desc: You can control visibility from _config.yml file
+  - title: Forging flask Session cookies
+    url: flask-session-cookies-forge
+    desc: An indepth into forging flask session cookies
 
-  - title: Project 4
-    url: overview-post
-    desc: This project uses highlight markup, configured in _data/home.yml
-    highlight: WIP
+  - title: Hack The Box Apocalypse CTF - passman
+    url: htb-the-cursed-passman
+    desc: A writeup for web challenge passman for hack the box apocalypse CTF
+    highlight: Writeup
 
-  - title: Project 5
-    url: overview-post
-    desc: Moonwalk also has horizontal list (used in header and footer)
-    highlight: WIP
+  - title: working offline with volatility3
+    url: working-offline-with-volatility3
+    desc: How to work offline with volatility3 - no Symbol table
+    highlight: Writeup
 
-  - title: Project 6
-    url: overview-post
-    desc: It also has a scalable vertical list (in case you need it)
+  - title: Creating and Identifying profiles with volatility2
+    url: volatility2-profile-identification-and-creation
+    desc: a blog on how to identify and create volatility2 profiles
+    
+  - title: Volatility3 under the hood
+    url: volatility3-under-the-hood
+    desc: Delve deep into the workings of volatility3
+    
+  - title: Memory acquisition in windows and linux
+    url: memory-acquisition
+    desc: A blog on how to acquire memory dumps from windows and linux
+
+  - title: PCAP forensics on Layer 2 protocols - IrisCTF
+    url: wi-the-fi
+    desc: A writeup on Layer 2 network forensics
+
+  - title: Aspire CTF: Kernel Padding
+    url: aspire-ctf-padding
+    desc: A writeup for kernel padding by aspire CTF.
+
+  - title: Steganography challenges - Africahackon2021
+    url: africahackon-steganography
+    desc: Writeups for steg challenges.
+
+  - title: Linux Memory Forensics
+    url: linuxmemoryforensics
+    desc: Linux memory forensics with volatility2.
+  
 
 old_project_entries:
   - title: Soopr

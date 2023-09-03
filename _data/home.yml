@@ -49,15 +49,15 @@ project_entries:
 
   - title: Aspire CTF: Kernel Padding
     url: Aspire_CTF_padding
-    desc: A writeup for kernel padding by Aspire CTF.
+    desc: A writeup for kernel padding by Aspire CTF
 
   - title: Steganography challenges - Africahackon2021
     url: africahackon_Steganography
-    desc: Writeups for steg challenges.
+    desc: Writeups for steg challenges
 
   - title: Linux Memory Forensics
     url: Linuxmemoryforensics
-    desc: Linux memory forensics with volatility2.
+    desc: Linux memory forensics with volatility2
   
 
 old_project_entries:

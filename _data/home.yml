@@ -10,7 +10,7 @@ navbar_entries:
 
 project_entries:
   - title: MalDOC in PDF
-    url: Maldoc-in-PDF
+    url: maldoc-in-pdf
     desc: Analysis on Maldoc Embedded in PDF Attack 
 
   - title: CVE-2023-36884 doc analysis
@@ -48,11 +48,11 @@ project_entries:
     desc: A writeup on Layer 2 network forensics
 
   - title: Aspire CTF - Kernel Padding
-    url: aspire_ctf_padding
+    url: aspire-ctf-padding
     desc: A writeup for kernel padding by Aspire CTF
 
   - title: Steganography challenges - Africahackon2021
-    url: africahackon_steganography
+    url: africahackon-steganography
     desc: Writeups for steg challenges
 
   - title: Linux Memory Forensics

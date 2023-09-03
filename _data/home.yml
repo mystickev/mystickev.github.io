@@ -10,11 +10,11 @@ navbar_entries:
 
 project_entries:
   - title: MalDOC in PDF
-    url: MalDoc-in-PDF
+    url: Maldoc-in-PDF
     desc: Analysis on Maldoc Embedded in PDF Attack 
 
   - title: CVE-2023-36884 doc analysis
-    url: CVE-2023-36884-analysis
+    url: cve-2023-36884-analysis
     desc: A detailed analysis on CVE-2023-36884
 
   - title: Forging flask Session cookies
@@ -22,7 +22,7 @@ project_entries:
     desc: An indepth into forging flask session cookies
 
   - title: Hack The Box Apocalypse CTF - passman
-    url: HTB-The-Cursed-Passman
+    url: htb-the-cursed-passman
     desc: A writeup for web challenge passman for hack the box apocalypse CTF
     highlight: Writeup
 
@@ -36,11 +36,11 @@ project_entries:
     desc: a blog on how to identify and create volatility2 profiles
     
   - title: Volatility3 under the hood
-    url: Volatility3-Under-The-Hood
+    url: volatility3-under-the-hood
     desc: Delve deep into the workings of volatility3
     
   - title: Memory acquisition in windows and linux
-    url: MEMORY-ACQUISITION
+    url: memory-acquisition
     desc: A blog on how to acquire memory dumps from windows and linux
 
   - title: PCAP forensics on Layer 2 protocols
@@ -48,15 +48,15 @@ project_entries:
     desc: A writeup on Layer 2 network forensics
 
   - title: Aspire CTF - Kernel Padding
-    url: Aspire_CTF_padding
+    url: aspire_ctf_padding
     desc: A writeup for kernel padding by Aspire CTF
 
   - title: Steganography challenges - Africahackon2021
-    url: africahackon_Steganography
+    url: africahackon_steganography
     desc: Writeups for steg challenges
 
   - title: Linux Memory Forensics
-    url: Linuxmemoryforensics
+    url: linuxmemoryforensics
     desc: Linux memory forensics with volatility2
   
 

@@ -77,25 +77,25 @@ misc_entries:
    # url: false
 
   - title: Blog posts
-    post_list: true
+    post_list: false
     url: false
 
-  - title: moonwalk on the Internet
-    url: false
-    entries:
-      - title: on Github
-        url: https://github.com/mystickev/
+ # - title: moonwalk on the Internet
+  #  url: false
+   # entries:
+    #  - title: on Github
+     #   url: https://github.com/mystickev/
 
-      - title: originally built for ~mystik
-        url: https://mystickev.github.io
+      #- title: originally built for ~mystik
+       # url: https://mystickev.github.io
 
-      - title: this list is scalable and can be nested
-        url: false
-        entries:
-          - title: this is nested inside a nested list
-            url: false
+      #- title: this list is scalable and can be nested
+       # url: false
+        #entries:
+         # - title: this is nested inside a nested list
+           # url: false
 
-          - title: it is easy to use, see _data/home.yml to see how to configure it.
-            url: false
+          #- title: it is easy to use, see _data/home.yml to see how to configure it.
+           # url: false
 
 

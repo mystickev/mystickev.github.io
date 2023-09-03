@@ -1,16 +1,16 @@
-title: Mystiks-Treasure-Trove
+title: Mystik-Treasure-Trove
 author: ~Mystik
 url: https://mystickev.github.io # root address of the site
-description: Mystiks-Treasure-Trove is a collection of writeups and information that i have come across during my CyberSecurity engagements i.e CTFS,Work and personal Research. The topics range from forensics, reverse-engineering, OSINT and new research topics that i engage in. There is something to take home from the content on this blogs and all content reflects my thought process and logical capability to tackle problems. Enjoy.
+description: ~Mystik-Treasure-Trove is a collection of blogs and research that I have come across during my CyberSecurity engagements i.e. CTFS, Work, and personal Research. The topics range from Forensics, Reverse-Engineering, OSINT, and any new research topics that will excite me. All the information from the blogs and content on this website reflects my thought process and logical capability to tackle problems. Enjoy.
 permalink: /:slug
 
 favicon: "./logo.png" # relative path to site's favicon
 
 twitter:
-    username: mystik_kev # update or delete this
+    username: mystik_kev # Update or delete this
     card: summary_large_image
 
-#theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
+#theme: moonwalk # If you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
 remote_theme: abhinavs/moonwalk
 
 theme_config:
@@ -23,10 +23,10 @@ theme_config:
   show_footer: true # show footer links in home page,add in _data/home.yml
   show_copyright: true # show copyright notice in footer
   # following keys are using to create home layout
-  show_projects: false # show projects as cards, add in _data/home.yml
+  show_projects: true # show projects as cards, add in _data/home.yml
   show_blog: true # show blog posts added in _posts
-  show_old_projects: false # show old projects as cards, add in _data/home.yml
-  show_misc_list: false # show generic vertical list for misc details, add _data/home.yml
+  show_old_projects: true # show old projects as cards, add in _data/home.yml
+  show_misc_list: true # show generic vertical list for misc details, add _data/home.yml
   show_reading_time: true # show number of words and reading time in the blog posts
   show_tags: true # show tags in a blog posts
   # options for "home" page

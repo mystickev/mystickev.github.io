@@ -1,6 +1,6 @@
 # DEOBFUSCATING JAVASCRIPT ON PHISHING EMAILS
 
-## Deobfuscating JavaScript while investigating phishing emails.
+![original_code](/assets/images/favicon/javascript.png)
 
 Hello, valued readers!
 

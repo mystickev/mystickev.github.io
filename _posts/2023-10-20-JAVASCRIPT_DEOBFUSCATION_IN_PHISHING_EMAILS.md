@@ -116,3 +116,9 @@ As observed above, SpiderMonkey produces the same output as the browser console 
 We covered how to clean JavaScript code, deobfuscate, and emulate the code. To emphasize, make use of the browser console to perform debugging of your javascript code, this has saved me from a lot of Google searches that would have been time-consuming.
 
 ## Related Resources
+
+- https://lelinhtinh.github.io/de4js/
+- https://deobfuscate.relative.im/
+- https://www.commontools.org/tool/javascript-validator-79
+- https://willnode.github.io/deobfuscator/
+- https://gchq.github.io/CyberChef/

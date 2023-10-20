@@ -14,7 +14,6 @@ project_entries:
     desc: Deobfuscating Malicious Javascript from phishing emails. 
     highlight: Malware-analysis
 
-
   - title: Polyglots - MalDOC in PDF
     url: maldoc-in-pdf
     desc: Analysis on Maldoc Embedded in PDF Attack 

@@ -9,6 +9,12 @@ navbar_entries:
     url: https://mystickev.github.io
 
 project_entries:
+  - title: Malicious Javascript Deobfuscation
+    url: javascript-deobfuscation-in-phishing-emails
+    desc: Deobfuscating Malicious Javascript from phishing emails. 
+    highlight: Malware-analysis
+
+
   - title: Polyglots - MalDOC in PDF
     url: maldoc-in-pdf
     desc: Analysis on Maldoc Embedded in PDF Attack 

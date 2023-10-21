@@ -97,7 +97,7 @@ As shown above, the code runs and displays each value that I logged.
 
 SpiderMonkey is a C-based version of JavaScript developed by Mozilla. It acts as a standalone JavaScript interpreter, allowing you to run JavaScript directly from a Linux command line without needing a browser or additional plugins. This provides a more secure setting to run and inspect unfamiliar JavaScript code. To use the tool to emulate javascript, install and perform the following actions:
 
-1. Extract the JavaScript content (everything inside the <script> tags, excluding the tags themselves) and save it to a different file.
+1. Extract the JavaScript content (everything inside the *script* tags, excluding the tags themselves) and save it to a different file.
 2. If the code contains an eval command, we can do this to log its return value, at the start of the script, insert the line eval = print; This modification causes the eval to display its input instead of running it.
 3. Execute the modified script using SpiderMonkey.
 

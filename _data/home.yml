@@ -9,21 +9,6 @@ navbar_entries:
     url: https://mystickev.github.io
 
 project_entries:
-  - title: Malicious Javascript Deobfuscation
-    url: javascript-deobfuscation-in-phishing-emails
-    desc: Deobfuscating Malicious Javascript from phishing emails. 
-    highlight: Malware-analysis
-
-  - title: Polyglots - MalDOC in PDF
-    url: maldoc-in-pdf
-    desc: Analysis on Maldoc Embedded in PDF Attack 
-    highlight: Malware-analysis
-
-  - title: CVE-2023-36884 doc analysis
-    url: cve-2023-36884-analysis
-    desc: A detailed analysis on CVE-2023-36884
-    highlight: Malware-analysis
-
   - title: Forging flask Session cookies
     url: flask-session-cookies-forge
     desc: An indepth into forging flask session cookies
@@ -81,17 +66,20 @@ old_project_entries:
     desc: An Assembly and CPU Architecture refresher
     highlight: Malware
 
- # - title: Cookie
-  #  url: https://github.com/mystickev
-   # desc: An open source landing website with supporting pages and integrated blog
+  - title: Malicious Javascript Deobfuscation
+    url: javascript-deobfuscation-in-phishing-emails
+    desc: Deobfuscating Malicious Javascript from phishing emails. 
+    highlight: Malware-analysis
 
-  #- title: Moonwalk
-   # url: https://github.com/mystickev
-    #desc: A fast and minimalist Jekyll blog theme with clean dark mode
+  - title: Polyglots - MalDOC in PDF
+    url: maldoc-in-pdf
+    desc: Analysis on Maldoc Embedded in PDF Attack 
+    highlight: Malware-analysis
 
-  #- title: Humangous
-   # url: https://github.com/mystickev
-    #desc: The better people know you, the better they collaborate
+  - title: CVE-2023-36884 doc analysis
+    url: cve-2023-36884-analysis
+    desc: A detailed analysis of CVE-2023-36884
+    highlight: Malware-analysis
 
 footer_entries:
   - title: ~Mystiks homepage

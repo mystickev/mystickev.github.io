@@ -1,3 +1,6 @@
+
+## CPU ARCH AND ASSEMBLY REFRESHER
+
 An assembly language comprises:
 
 - constants

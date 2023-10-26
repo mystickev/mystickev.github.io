@@ -34,7 +34,7 @@ theme_config:
     title_projects: DIGITAL FORENSICS AND INCIDENT RESPONSE
     title_misc_list: Details
     title_blog: Blog
-    title_old_projects: MALWARE ANALYSIS AND DEVELOPMENT RESEARCH
+    title_old_projects: MALWARE ANALYSIS AND MALD3V RESEARCH
 
 soopr:
   publish_token: "pt_fd0b1d937b7990963479f8ddb18c3b89" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options

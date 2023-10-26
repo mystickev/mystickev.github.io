@@ -34,25 +34,34 @@ They are case-insensitive
 
 Examples
 
-- .code
+- ```
+  .code
     
     main PROC
+  
     mov     eax, 10000h ;Copies 10000h into EAX
     
     add      eax, 40000h ;Adds 40000h to EAX
+  
     sub      eax, 20000h ; Subtracts 20000h from EAX
+  
     call      DumpRegs ; Call the procedure DumpRegs
+  
     exit                         ; Call Windows procedure Exit ; to halt the program
     
     main    ENDP ; marks the end of main
-    end      main ; last line to be assembled
+  
+    end      main ; last line to be assembled ```
     
-- .data
+- ```
+  .data
     
     val1    db     255 ; unsigned byte
-    
-- name        PROC
-    
+  ```
+
+- ```
+  name        PROC
+  ```  
     
 
 db is the older directive for assigning 8-bit data to a storage area. i.e

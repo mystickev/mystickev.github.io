@@ -77,7 +77,7 @@ project_entries:
 
 old_project_entries:
   - title: Assembly Refresher
-    url: assembly-refresher
+    url: cpu-arch-and-assembly-language-refresher
     desc: An assembly and CPU architecture refresher 
     highlight: Malware
 

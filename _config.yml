@@ -1,7 +1,7 @@
 title: Mystik Treasure Trove
 author: ~Mystik
 url: https://mystickev.github.io # root address of the site
-description: The Mystik Treasure Trove is a collection of blogs and research that I have come across during my CyberSecurity engagements i.e. CTFS, Work, and personal Research. The topics range from Forensics, Reverse-Engineering, OSINT, and any new research topics that will excite me. All the information from the blogs and content on this website reflects my thought process and logical capability to tackle problems. Enjoy.
+description: Step into the Mystik Treasure Trove, a curated collection that not only delves deep into the vast world of cybersecurity but also showcases my approach to logically solving challenges. Stemming from hands-on experiences in Capture The Flag challenges (CTFs), professional engagements, and rigorous personal research, this platform offers a diverse range of topics. From Forensics, Reverse-Engineering, and OSINT to the intricate realms of malware analysis and development, each piece of content is crafted to provide insights while highlighting the logical processes behind tackling complex issues. Whether you are a seasoned expert, an aspiring novice, or someone with a budding interest in cybersecurity, the Mystik Treasure Trove is a beacon of knowledge and methodology. Embark on this learning journey with me as we develop the art of problem-solving....
 permalink: /:slug
 
 favicon: "./logo.png" # relative path to site's favicon

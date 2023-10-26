@@ -77,8 +77,8 @@ project_entries:
 
 old_project_entries:
   - title: Assembly Refresher
-    url: cpu-arch-and-assembly-language-refresher
-    desc: An assembly and CPU architecture refresher 
+    url: assembly-refresher
+    desc: An Assembly and CPU Architecture refresher
     highlight: Malware
 
  # - title: Cookie

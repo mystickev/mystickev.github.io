@@ -1,5 +1,3 @@
-# CPU-ARCHITECTURE && ASSEMBLY LANGUAGE REFRESHER
-
 An assembly language comprises:
 
 - constants

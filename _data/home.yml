@@ -76,22 +76,22 @@ project_entries:
   
 
 old_project_entries:
-  - title: Soopr
-    url: https://github.com/mystickev/CTFwriteups
-    desc: Delight your readers - add beautiful share and like buttons easily to your websites 
-    highlight: NEW
+  - title: Assembly Refresher
+    url: assembly-refresher
+    desc: An assembly and CPU architecture refresher 
+    highlight: Malware
 
-  - title: Cookie
-    url: https://github.com/mystickev
-    desc: An open source landing website with supporting pages and integrated blog
+ # - title: Cookie
+  #  url: https://github.com/mystickev
+   # desc: An open source landing website with supporting pages and integrated blog
 
-  - title: Moonwalk
-    url: https://github.com/mystickev
-    desc: A fast and minimalist Jekyll blog theme with clean dark mode
+  #- title: Moonwalk
+   # url: https://github.com/mystickev
+    #desc: A fast and minimalist Jekyll blog theme with clean dark mode
 
-  - title: Humangous
-    url: https://github.com/mystickev
-    desc: The better people know you, the better they collaborate
+  #- title: Humangous
+   # url: https://github.com/mystickev
+    #desc: The better people know you, the better they collaborate
 
 footer_entries:
   - title: ~Mystiks homepage

@@ -196,26 +196,26 @@ Let's look at a simple assembly instruction: **`mov   eax, [0x410230]`**.
 
 In this example, the result is that the 4 bytes of data located at **`0x410230`** will be moved to the **`EAX`** register.
 
-## **Indirect Memory Addressing?**
+## Indirect Memory Addressing?
 
 Picture a sprawling city with many streets and addresses. Now, some addresses are straightforward – "123 Main St." But others might be a bit more complex like, "The third house after the big oak tree on Elm St." This latter way of describing addresses is how you can think of **indirect memory addressing**.
 
 In assembly, instead of always accessing a specific memory address directly, we can use combinations of registers and values to dynamically compute the address. It's a powerful method but can also be a bit tricky to decipher. Let’s break down some examples:
 
-## **Indirect Addressing Examples**
+## Indirect Addressing Examples
 
 1. **[EAX]**: This is like saying, "Access the house (or memory) that the EAX register points to." In our city analogy, EAX holds the address of a particular house, and we want to go there.
 2. **[EBP + 0x10]**: This one's a bit more nuanced. If EBP is a starting point, we're moving a bit further to access data. In our city, it's like saying, "Go to the address in EBP and then move 16 houses down."
 3. **[EAX + EBX * 8]**: Think of this as accessing an apartment complex. EAX points to the start of the complex, and each building (or memory structure) is 8 units apart. EBX tells us which building to access. So if EBX is 2, we'd skip the first two buildings and head to the third one.
 4. **[EAX + EBX + 0xC]**: This is like navigating a condo with different wings and floors. EAX might point to the start of a wing, EBX might indicate which floor to go to, and 0xC is a specific condo on that floor.
 
-## **Jump Instructions: BASICS**
+## Jump Instructions: BASICS
 
 Imagine you're reading a book, and suddenly, a note tells you to skip ahead to another chapter or perhaps go back to a previous page. This sudden shift is precisely how "jump instructions" work in assembly.
 
 A jump instruction gives a directive to the CPU to cease its current operation and start executing code from an entirely new location in memory. It's like a crossroad that determines the flow of our program. In simpler terms, think of it as a detour sign on a road trip.
 
-## **Unconditional Jumps**
+## Unconditional Jumps
 
 As the name suggests, **unconditional jumps** are like those detour signs that you must follow, no matter what. They always redirect the execution to a new memory location, with no strings attached.
 
@@ -225,7 +225,7 @@ As the name suggests, **unconditional jumps** are like those detour signs that y
 2. **CALL**: A bit more sophisticated, this not only jumps to a new location but also remembers where it came from. This is useful for procedures or functions, ensuring we can return once the function is done.
 3. **RET**: Speaking of returning, RET does just that. After a CALL, the RET instruction ensures we go back to where we were before the jump.
 
-## **Conditional Jumps in Assembly**
+## Conditional Jumps in Assembly
 
 Conditional jumps in assembly direct the CPU to shift its execution to another part of the program based on specific conditions. These jumps rely on the state of the flags register, which gets updated after arithmetic or Boolean operations.
 

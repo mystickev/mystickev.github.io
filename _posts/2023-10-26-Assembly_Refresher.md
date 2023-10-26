@@ -52,8 +52,9 @@ Examples
     
     main    ENDP ; marks the end of main
   
-    end      main ; last line to be assembled ```
-    
+    end      main ; last line to be assembled
+    ```
+
 - ```
   .data
     

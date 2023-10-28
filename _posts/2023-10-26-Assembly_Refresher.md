@@ -270,3 +270,129 @@ The **mul** operation will multiply the predefined register(eax) with the value 
 The return value of the operation will be stored across two registers, EDX and EAX with EDX storing most significant bits and EAX storing least significant bits.
 
 **Div** will do the same operation as mul but will divide the 64-bits across EDX and EAX by value. The result will be stored in EAX and the remainder in EDX.
+# REVERSING FUNCTIONS
+
+## CALLING A FUNCTION
+
+1. function format: return = function(arg0,arg1)
+2. specific events occur when calling a function:
+3. Pass in parameters(stack / register)
+4. save return pointer
+5. Transfer control to the function.
+
+Specific events occur when returning from a function:
+
+1. Set up a return value(typically EAX)
+2. clean up stack and store registers
+3. Transfer control to the saved return pointer
+
+### F**unction** P**rologue actions**
+
+```jsx
+push ebp; save ebp
+
+mov ebp, esp; create function stack
+
+sub esp, 104h ; create space for variables/arguments
+
+push edi; save registers to be used within the function.
+
+push esi;
+```
+
+### **Function** E**pilogue actions**
+
+```jsx
+pop all pushed registers
+retn = pop eip;
+leave = mov esp, ebp; pop ebp;
+add esp, 4 ; restore esp state.
+```
+
+## STACK
+
+The stack is Last In, First Out (LIFO).
+
+• PUSH adds an element, and POP removes one.
+
+• ESP points to the next item on the stack and changes with
+instructions like PUSH, POP, CALL, LEAVE, and RET.
+
+• EBP (a.k.a. “frame pointer”) is an unchanging reference.
+
+• EBP – value = local variable (registers may also be used)
+
+### ACTIONS FOR CLEAN-UP
+
+`pop edx implies esp + 4`
+
+`RET`
+
+`retn = pop eip;
+leave = mov esp,  ebp +  pop     ebp;
+add esp,  value ; restore esp state.`
+
+## FUNCTIONS CALLING CONVENTIONS
+
+### cdecl convention (most common)
+
+- Arguments placed on the stack from right to left
+- The return value is placed in EAX
+- The caller cleans up the stack(it removes the arguments)
+
+EXAMPLE
+
+```jsx
+push        edx ; SubStr
+push        eax ; str
+call        strstr 
+add         esp,     8;   clean up
+```
+
+### Stdcall convention
+
+- Similar to cdecl but the callee cleans up the stack
+- This is the convention used in WIN32 APIs
+
+EXAMPLE
+
+```jsx
+push      offset LibFileName ; Kernel32.dll
+
+call      ds:LoadLibraryA
+
+mov       [ebp+hModule], eax; no stack clean up after the call.
+```
+
+### Fastcall convention
+
+- Arguments are stored on the stack
+- Any extra arguments placed on the stack
+- The callee cleans up arguments on the stack
+
+EXAMPLE
+
+```jsx
+mov        edx, offset  aCmdExe ; cmd.exe
+
+lea        ecx,   [ebp+8]
+
+call       sub_409008 ;    note the use of ecx and edx registers
+```
+
+### Thiscall convention
+
+- Used in C++ code(member functions)
+- this convention includes a reference to the ***“this”*** pointer.
+- In Microsoft compilers, ECX holds the ***“this”***  pointer and the callee is responsible for cleaning up the stack
+- in GNU compilers, the “this” pointer is pushed onto the stack last and the caller cleans up after.
+
+EXAMPLE
+
+```jsx
+mov       ecx,     eax   ; ECX holds the address of self. 
+
+call         sub_10001067
+```
+
+# Related Resources

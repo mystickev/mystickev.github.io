@@ -394,5 +394,3 @@ mov       ecx,     eax   ; ECX holds the address of self.
 
 call         sub_10001067
 ```
-
-# Related Resources

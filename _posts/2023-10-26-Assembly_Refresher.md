@@ -322,6 +322,18 @@ instructions like PUSH, POP, CALL, LEAVE, and RET.
 
 • EBP – value = local variable (registers may also be used)
 
+![image_info](/assets/images/favicon/stack-image.png)
+
+### Typical function Example
+
+![image](/assets/images/favicon/typical-example.png)
+
+
+### Corresponding Stack for the function above
+
+![image](/assets/images/favicon/stack-image-for-function.png)
+
+
 ### ACTIONS FOR CLEAN-UP
 
 `pop edx implies esp + 4`
